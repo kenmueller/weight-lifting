@@ -1,8 +1,15 @@
+@use '../navbar';
+
 .root {
 	display: flex;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
 	justify-content: space-between;
 	align-items: center;
-	padding: 24px 30px;
+	height: navbar.$height;
+	padding: 0 30px;
 	background: #212842;
 	box-shadow: 0 0 20px 5px #131931;
 }
