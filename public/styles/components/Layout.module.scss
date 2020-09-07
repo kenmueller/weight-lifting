@@ -1,4 +1,15 @@
+@use '../navbar';
+@use '../sidebar';
+
 .root {
 	min-height: 100vh;
 	background: #292d3e;
+}
+
+.content {
+	padding:
+		(navbar.$height + navbar.$margin)
+		navbar.$margin
+		navbar.$margin
+		(sidebar.$width + navbar.$margin * 2);
 }

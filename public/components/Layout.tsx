@@ -1,19 +1,18 @@
 import { PropsWithChildren } from 'react'
 
-import useRoutines from 'hooks/useRoutines'
 import Navbar from './Navbar'
+import Sidebar from './Sidebar'
 
 import styles from 'styles/components/Layout.module.scss'
 
-const Layout = ({ children }: PropsWithChildren<{}>) => {
-	const routines = useRoutines()
-	
-	return (
-		<div className={styles.root}>
-			<Navbar />
+const Layout = ({ children }: PropsWithChildren<{}>) => (
+	<div className={styles.root}>
+		<Navbar />
+		<Sidebar />
+		<main className={styles.content}>
 			{children}
-		</div>
-	)
-}
+		</main>
+	</div>
+)
 
 export default Layout
