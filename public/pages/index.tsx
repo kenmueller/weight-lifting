@@ -1,14 +1,16 @@
 import Head from 'next/head'
 
-import styles from 'styles/index.module.scss'
+import Routine from 'models/Routine'
+import Layout from 'components/Layout'
+
+import styles from 'styles/pages/Home.module.scss'
 
 const Home = () => (
-	<div className={styles.root}>
+	<Layout>
 		<Head>
 			<title key="title">Weight Lifting</title>
 		</Head>
-		<h1>If you see this, your Next.js app is working!</h1>
-	</div>
+	</Layout>
 )
 
 export default Home
