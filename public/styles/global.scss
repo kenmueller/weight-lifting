@@ -1,8 +1,24 @@
+@use 'toast';
+
 *,
 ::before,
 ::after {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: Muli, Arial, Helvetica, sans-serif;
 	border: none;
+	outline: none;
+}
+
+body {
+	overscroll-behavior: none;
+}
+
+button {
+	cursor: pointer;
+	
+	&:disabled {
+		cursor: default;
+	}
 }
