@@ -1,0 +1,32 @@
+.root {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 12px 20px;
+	font-size: 16px;
+	font-weight: 900;
+	color: white;
+	background: transparentize(white, 0.9);
+	border-radius: 8px;
+	transition: background 0.3s, opacity 0.3s;
+	
+	&:not(.loading):disabled {
+		opacity: 0.5;
+	}
+	
+	&:not(:disabled):hover {
+		background: #e43f77;
+	}
+}
+
+.icon {
+	height: 22px;
+	margin-right: 8px;
+}
+
+.message {
+	white-space: nowrap;
+	font-size: 16px;
+	font-weight: 900;
+}
