@@ -1,0 +1,57 @@
+.routineContainer {
+  color: white;
+  max-width: 100%;
+}
+
+.routineContainerHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.routineContainerInfo {
+  flex: 1;
+  margin-bottom: 20px;
+
+  & > * {
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+}
+
+.routineDescription, .routineOwner {
+  display: block;
+}
+
+.routineDescription {
+  font-size: 17px;
+}
+
+.descriptionLabel {
+  font-size: 15px;
+  color: #d2d2d2;
+}
+
+.routineOwner {
+  color: #d2d2d2;
+}
+
+.routineAddButton {
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 7px;
+  background: #3c87f6;
+  color: white;
+  margin: 15px 0;
+
+  &:hover {
+    background: #3c8fff;
+  }
+}
+
+.routineStatsContainer {
+  display: flex;
+  align-content: space-between;
+}

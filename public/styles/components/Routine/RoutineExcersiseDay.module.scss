@@ -1,0 +1,30 @@
+.dayContainer {
+  margin: 20px 0;
+}
+.dayHeader {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.collapseToggle {
+  padding-right: 5px;
+}
+
+.dayName {
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+.exerciseContainer {
+  padding-left: 50px;
+}
+
+.exerciseContainer p, .exerciseContainer span {
+  display: block;
+  margin: 10px 0;
+}
+
+.exerciseName {
+  font-size: 23px;
+}
