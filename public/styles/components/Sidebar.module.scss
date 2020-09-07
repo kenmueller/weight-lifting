@@ -1,0 +1,14 @@
+@use '../navbar';
+@use '../sidebar';
+
+.root {
+	position: fixed;
+	top: navbar.$height + navbar.$margin;
+	bottom: navbar.$margin;
+	left: navbar.$margin;
+	width: sidebar.$width;
+	padding: 30px;
+	background: #212842;
+	border-radius: 15px;
+	box-shadow: 0 0 20px 5px #131931;
+}
