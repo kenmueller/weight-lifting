@@ -7,6 +7,11 @@
 		"start": "next start"
 	},
 	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^1.2.30",
+		"@fortawesome/free-brands-svg-icons": "^5.14.0",
+		"@fortawesome/free-solid-svg-icons": "^5.14.0",
+		"@fortawesome/react-fontawesome": "^0.1.11",
+		"classnames": "^2.2.6",
 		"cookie": "^0.4.1",
 		"firebase": "^7.19.1",
 		"next": "^9.5.3",
@@ -16,6 +21,7 @@
 		"sass": "^1.26.10"
 	},
 	"devDependencies": {
+		"@types/classnames": "^2.2.10",
 		"@types/cookie": "^0.4.0",
 		"@types/node": "^14.6.4",
 		"@types/react": "^16.9.49",
