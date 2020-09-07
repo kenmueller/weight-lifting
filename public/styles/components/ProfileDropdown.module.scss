@@ -1,0 +1,49 @@
+.root {
+	position: relative;
+}
+
+.trigger {
+	display: flex;
+	align-items: center;
+	padding: 8px 16px;
+	color: white;
+	background: transparentize(white, 0.9);
+	border-radius: 8px;
+	transition: background 0.3s;
+	
+	&:hover {
+		background: transparentize(white, 0.8);
+	}
+}
+
+.name {
+	margin-right: 8px;
+	font-size: 16px;
+	font-weight: 900;
+}
+
+.icon {
+	height: 22px;
+}
+
+.content {
+	position: absolute;
+	min-width: 300px;
+	top: 100%;
+	right: 0;
+	margin-top: 8px;
+	padding: 30px;
+	pointer-events: none;
+	background: #212842;
+	border-radius: 8px;
+	box-shadow: 0 0 20px 5px #131931;
+	transform: translateX(-20px);
+	opacity: 0;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.showing {
+	pointer-events: all;
+	transform: none;
+	opacity: 1;
+}
