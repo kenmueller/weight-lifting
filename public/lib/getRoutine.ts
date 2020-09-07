@@ -15,6 +15,7 @@ const getRoutine = async (id: string): Promise<Routine | null> => {
 			slug: snapshot.get('slug'),
 			name: snapshot.get('name'),
 			info: snapshot.get('info'),
+			description: snapshot.get('description'),
 			owner: {
 				id: owner.id,
 				name: owner.get('name')

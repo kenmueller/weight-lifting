@@ -10,5 +10,6 @@ export default interface Routine {
 	slug: string
 	name: string
 	info: RoutineInfoPair[]
+	description: string
 	owner: User
 }
